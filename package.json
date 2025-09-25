@@ -1,20 +1,25 @@
 {
-  "name": "node-hello",
+  "name": "docker-node-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sample Node.js app running inside Docker",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CloudTechDevOps/sample_nodejs_on_Ec2"
+    "url": "https://github.com/abinashkumar19/Docker-Node-js.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "docker",
+    "express",
+    "sample"
+  ],
+  "author": "Abinash Kumar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CloudTechDevOps/sample_nodejs_on_Ec2"
+    "url": "https://github.com/abinashkumar19/Docker-Node-js/issues"
   },
-  "homepage": "https://github.com/CloudTechDevOps/sample_nodejs_on_Ec2"
+  "homepage": "https://github.com/abinashkumar19/Docker-Node-js#readme"
 }
