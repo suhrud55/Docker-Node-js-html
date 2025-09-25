@@ -1,7 +1,7 @@
 // server.js
 const http = require('http');
 const os = require('os');
-const PORT = 81;
+const PORT = 6309;
 
 const html = `<!doctype html>
 <html lang="en">
@@ -238,7 +238,7 @@ const html = `<!doctype html>
           <p class="muted" style="margin-top:8px">This page is served from a tiny Node.js HTTP server (single-file). It uses a small API at <code>/api/status</code> to show live server info.</p>
           <div style="margin-top:10px">
             <pre class="code">node server.js
-open http://localhost:81</pre>
+open http://localhost:6309</pre>
           </div>
         </div>
       </div>
@@ -385,3 +385,4 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, () => {
   console.log('Server listening on http://localhost:' + PORT);
 });
+
