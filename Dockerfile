@@ -1,20 +1,21 @@
-# Use official Node.js LTS version as base
+# Use official Node.js LTS version
 FROM node:18-alpine
 
-# Set working directory inside container
+# Install bash (optional)
+RUN apk add --no-cache bash
+
+# Set working directory
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json first (for caching layers)
+# Copy package.json and install dependencies
 COPY package*.json ./
-
-# Install dependencies (not needed here but good practice)
 RUN npm install
 
 # Copy app source code
 COPY . .
 
-# Expose port (81 as per index.js)
-EXPOSE 6309
+# Expose port 81
+EXPOSE 81
 
 # Start the app
 CMD ["npm", "start"]
